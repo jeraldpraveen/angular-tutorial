@@ -3,10 +3,11 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { SupplierComponent } from './CustomerApp.SupplierComponent';
 import { SupplierRoutes } from '../Routing/CustomerApp.SupplierRouting';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [SupplierComponent],
-  imports: [FormsModule, RouterModule.forChild(SupplierRoutes)],
+  imports: [CommonModule, FormsModule, RouterModule.forChild(SupplierRoutes)],
   providers: [],
   bootstrap: [SupplierComponent],
 })
