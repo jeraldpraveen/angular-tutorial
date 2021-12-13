@@ -17,4 +17,4 @@ import { HomeComponent } from './Home/CustomerApp.HomeComponent';
   providers: [],
   bootstrap: [MasterComponent],
 })
-export class CustomerModule {}
+export class CustomerAppModule {}
