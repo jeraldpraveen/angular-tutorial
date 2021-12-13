@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { CustomerComponent } from './Customer/Customer.CustomerComponent';
+import { CustomerComponent } from './Customer/CustomerApp.CustomerComponent';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
