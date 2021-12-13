@@ -9,4 +9,9 @@ import { Customer } from './Customer.model';
 export class CustomerComponent {
   title = 'Customer Application';
   CustomerModel: Customer = new Customer();
+  CustomerModels: Array<Customer> = new Array<Customer>();
+  Add() {
+    this.CustomerModels.push(this.CustomerModel);
+    this.CustomerModel = new Customer(); // clear UI
+  }
 }
