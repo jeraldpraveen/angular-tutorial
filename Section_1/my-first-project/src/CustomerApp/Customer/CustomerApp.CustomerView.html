@@ -21,7 +21,12 @@
   <input [(ngModel)]="CustomerModel.CustomerAmount" type="text" />
   <br />
   <br />
-  <input (click)="Add()" type="button" value="Add" />
+  <input
+    [disabled]="!(CustomerModel.formCustomerGroup.valid)"
+    (click)="Add()"
+    type="button"
+    value="Add"
+  />
 </form>
 <br />
 Entered Code : {{CustomerModel.CustomerCode}}<br />
