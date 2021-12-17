@@ -8,7 +8,7 @@ import {
 
 // Best place to add validaton is Model....
 // Formgroup --> FormBuilder --> FormControl --> Validators
-export class Customer {
+export class CustomerModel {
   CustomerCode: string = '';
   CustomerName: string = '';
   CustomerAmount: number = 0;

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Customer } from '../CustomerApp.model';
+import { CustomerModel } from '../CustomerApp.model';
 
 @Component({
   templateUrl: './CustomerApp.CustomerView.html',
@@ -7,10 +7,10 @@ import { Customer } from '../CustomerApp.model';
 })
 export class CustomerComponent {
   title = 'Customer Application';
-  CustomerModel: Customer = new Customer();
-  CustomerModels: Array<Customer> = new Array<Customer>();
+  CustomerModel: CustomerModel = new CustomerModel();
+  CustomerModels: Array<CustomerModel> = new Array<CustomerModel>();
   Add() {
     this.CustomerModels.push(this.CustomerModel);
-    this.CustomerModel = new Customer(); // clear UI
+    this.CustomerModel = new CustomerModel(); // clear UI
   }
 }
