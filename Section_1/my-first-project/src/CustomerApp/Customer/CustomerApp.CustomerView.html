@@ -1,10 +1,20 @@
 <div>{{ title }} app is running!</div>
 <br />
 <form [formGroup]="CustmerModal.formCustomerGroup">
-  Customer Code : <input [(ngModel)]="CustomerModel.CustomerCode" type="text" />
+  Customer Code :
+  <input
+    formControlName="CustomerCodeControl"
+    [(ngModel)]="CustomerModel.CustomerCode"
+    type="text"
+  />
   <br />
   <br />
-  Customer Name : <input [(ngModel)]="CustomerModel.CustomerName" type="text" />
+  Customer Name :
+  <input
+    formControlName="CustomerNameControl"
+    [(ngModel)]="CustomerModel.CustomerName"
+    type="text"
+  />
   <br />
   <br />
   Customer Amount :
