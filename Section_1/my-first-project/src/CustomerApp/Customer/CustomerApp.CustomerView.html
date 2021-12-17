@@ -33,10 +33,29 @@
   />
 </form>
 <br />
-Entered Code : {{CustomerModel.CustomerCode}}<br />
+========================================
+<div
+  [hidden]="!(CustomerModel.formCustomerGroup.controls['CustomerCodeControl'].hasError('pattern'))"
+>
+  Customer Code Is Not Proper
+</div>
+<div
+  [hidden]="!(CustomerModel.formCustomerGroup.controls['CustomerCodeControl'].hasError('required'))"
+>
+  Customer Code Is Required
+</div>
+<div
+  [hidden]="!(CustomerModel.formCustomerGroup.controls['CustomerNameControl'].hasError('required'))"
+>
+  Customer Name is Required
+</div>
+<br />
+========================================
+<br />
+Entered Code:{{CustomerModel.CustomerCode}}<br />
 Entered Name : {{CustomerModel.CustomerName}}<br />
 Entered Amount : {{CustomerModel.CustomerAmount}}<br />
-
+========================================
 <table>
   <tr>
     <td>Customer Code</td>
