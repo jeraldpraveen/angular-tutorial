@@ -18,7 +18,11 @@
   <br />
   <br />
   Customer Amount :
-  <input [(ngModel)]="CustomerModel.CustomerAmount" type="text" />
+  <input
+    [(ngModel)]="CustomerModel.CustomerAmount"
+    type="text"
+    [ngModelOptions]="{standalone: true}"
+  />
   <br />
   <br />
   <input
