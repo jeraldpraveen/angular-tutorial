@@ -5,7 +5,7 @@
   <tr *ngFor="let colObj of gridData">
     <td *ngFor="let col of gridColumns">{{colObj[col.colName]}}</td>
     <td>
-      <a (click)="SelectGrid(colObj)" [routerLink]="['/Customer/Add']"
+      <a (click)="SelectGrid(colObj)" [routerLink]="['/Customer/CustomerView']"
         >select</a
       >
     </td>
