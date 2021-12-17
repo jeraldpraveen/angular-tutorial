@@ -62,4 +62,5 @@ Entered Amount : {{CustomerModel.CustomerAmount}}<br />
 <grid-ui
   [grid-columns]="[{'colName':'CustomerCode'},{'colName':'CustomerName'},{'colName':'CustomerAmount'}]"
   [grid-data]="CustomerModels"
+  (grid-selected)="SelectCustomer($event)"
 ></grid-ui>

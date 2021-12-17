@@ -15,7 +15,14 @@ export class GridComponent {
     this.gridColumns = _gridColumns;
   }
   @Input('grid-data')
-  set setGridData(_gridData: Array<Object>) {
+  set setGridData(_gridData: Array<any>) {
     this.gridData = _gridData;
+  }
+
+  @Output('grid-selected')
+  eventemitter: EventEmitter<any> = new EventEmitter<any>();
+
+  SelectGrid(_selected: any) {
+    this.eventemitter.emit(_selected);
   }
 }

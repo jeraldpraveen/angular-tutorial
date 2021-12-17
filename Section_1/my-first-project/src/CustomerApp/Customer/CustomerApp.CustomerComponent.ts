@@ -18,4 +18,7 @@ export class CustomerComponent {
     this.CustomerModels.push(this.CustomerModel);
     this.CustomerModel = new CustomerModel(); // clear UI
   }
+  SelectCustomer(_selected: CustomerModel) {
+    this.CustomerModel = _selected;
+  }
 }
