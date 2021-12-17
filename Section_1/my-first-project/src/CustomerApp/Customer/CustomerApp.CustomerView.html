@@ -35,16 +35,19 @@
 <br />
 ========================================
 <div
+  *ngIf="CustomerModel.formCustomerGroup.dirty"
   [hidden]="!(CustomerModel.formCustomerGroup.controls['CustomerCodeControl'].hasError('pattern'))"
 >
   Customer Code Is Not Proper
 </div>
 <div
+  *ngIf="CustomerModel.formCustomerGroup.dirty"
   [hidden]="!(CustomerModel.formCustomerGroup.controls['CustomerCodeControl'].hasError('required'))"
 >
   Customer Code Is Required
 </div>
 <div
+  *ngIf="CustomerModel.formCustomerGroup.dirty"
   [hidden]="!(CustomerModel.formCustomerGroup.controls['CustomerNameControl'].hasError('required'))"
 >
   Customer Name is Required
