@@ -18,7 +18,7 @@ export class Customer {
     var _builder = new FormBuilder();
     this.formCustomerGroup = _builder.group({});
     //Inputs In Screen(Controls) --> Write Validations
-    //Name Input --> One Validation(required)
+    //Name Input -->  One Validation(required)
     this.formCustomerGroup.addControl(
       'CustomerNameControl',
       new FormControl('', Validators.required)
