@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Injector } from '@angular/core';
 import { CustomerModel } from '../CustomerApp.model';
 // import { ConsoleLogger, ILogger } from '../Utility/CustomerApp.Logger';
 import { BaseLogger } from '../Utility/CustomerApp.Logger';
@@ -15,8 +15,12 @@ export class CustomerComponent {
   // constructor() {
   //   this.LogObject.Log();
   // }
-  constructor(_logger: BaseLogger) {
-    _logger.Log();
+  // constructor(_logger: BaseLogger) {
+  //   _logger.Log();
+  // }
+  constructor(_injector: Injector) {
+    const injectorObject = _injector.get('1');
+    injectorObject.Log();
   }
   Add() {
     this.CustomerModels.push(this.CustomerModel);

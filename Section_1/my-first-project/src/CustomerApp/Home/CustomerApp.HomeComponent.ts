@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Injector } from '@angular/core';
 // import { ILogger, DBLogger } from '../Utility/CustomerApp.Logger';
 import { BaseLogger } from '../Utility/CustomerApp.Logger';
 
@@ -11,7 +11,11 @@ export class HomeComponent {
   // constructor() {
   //   this.LogObject.Log();
   // }
-  constructor(_logger: BaseLogger) {
-    _logger.Log();
+  // constructor(_logger: BaseLogger) {
+  //   _logger.Log();
+  // }
+  constructor(_injector: Injector) {
+    const injectorObject = _injector.get('2');
+    injectorObject.Log();
   }
 }
