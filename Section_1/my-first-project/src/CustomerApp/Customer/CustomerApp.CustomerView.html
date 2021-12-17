@@ -1,16 +1,18 @@
 <div>{{ title }} app is running!</div>
 <br />
-Customer Code : <input [(ngModel)]="CustomerModel.CustomerCode" type="text" />
-<br />
-<br />
-Customer Name : <input [(ngModel)]="CustomerModel.CustomerName" type="text" />
-<br />
-<br />
-Customer Amount :
-<input [(ngModel)]="CustomerModel.CustomerAmount" type="text" />
-<br />
-<br />
-<input (click)="Add()" type="button" value="Add" />
+<form [formGroup]="CustmerModal.formCustomerGroup">
+  Customer Code : <input [(ngModel)]="CustomerModel.CustomerCode" type="text" />
+  <br />
+  <br />
+  Customer Name : <input [(ngModel)]="CustomerModel.CustomerName" type="text" />
+  <br />
+  <br />
+  Customer Amount :
+  <input [(ngModel)]="CustomerModel.CustomerAmount" type="text" />
+  <br />
+  <br />
+  <input (click)="Add()" type="button" value="Add" />
+</form>
 <br />
 Entered Code : {{CustomerModel.CustomerCode}}<br />
 Entered Name : {{CustomerModel.CustomerName}}<br />
