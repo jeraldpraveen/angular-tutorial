@@ -1,12 +1,13 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CustomerComponent } from './CustomerApp.CustomerComponent';
 import { CustomerRoutes } from '../Routing/CustomerApp.CustomerRouting';
 import { CommonModule } from '@angular/common';
+import { GridComponent } from '../Utility/CustomerApp.GridComponent';
 
 @NgModule({
-  declarations: [CustomerComponent],
+  declarations: [CustomerComponent, GridComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -14,6 +15,7 @@ import { CommonModule } from '@angular/common';
     ReactiveFormsModule,
   ],
   providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [CustomerComponent],
 })
 export class CustomerModule {}
