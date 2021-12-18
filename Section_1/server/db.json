@@ -1,0 +1,9 @@
+{
+  "Customers": [
+    {
+      "CustomerCode": 1234,
+      "CustomerName": "Jerald",
+      "CustomerAmount": "50000"
+    }
+  ]
+}
