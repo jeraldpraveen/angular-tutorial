@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MasterComponent } from './CustomerApp.MasterComponent';
 import { HomeComponent } from '../Home/CustomerApp.HomeComponent';
 import { MainRoutes } from '../Routing/CustomerApp.MainRouting';
+
 import {
   BaseLogger,
   ConsoleLogger,

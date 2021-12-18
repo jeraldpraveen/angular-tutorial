@@ -1,0 +1,118 @@
+{
+  "Customers": [
+    {
+      "id": 1,
+      "CustomerCode": 1234,
+      "CustomerName": "Jerald",
+      "CustomerAmount": "50000"
+    },
+    {
+      "CustomerCode": "5678",
+      "CustomerName": "derrick",
+      "CustomerAmount": "2000000",
+      "id": 2
+    },
+    {
+      "CustomerCode": "5678",
+      "CustomerName": "jhjk",
+      "CustomerAmount": 0,
+      "id": 3
+    },
+    {
+      "CustomerCode": "9632",
+      "CustomerName": "jhk",
+      "CustomerAmount": 0,
+      "id": 4
+    },
+    {
+      "CustomerCode": "8596",
+      "CustomerName": "bvmn",
+      "CustomerAmount": 0,
+      "id": 5
+    },
+    {
+      "CustomerCode": "4562",
+      "CustomerName": "ghfj",
+      "CustomerAmount": 0,
+      "id": 6
+    },
+    {
+      "CustomerCode": "",
+      "CustomerName": "",
+      "CustomerAmount": 0,
+      "id": 7
+    },
+    {
+      "CustomerCode": "2563",
+      "CustomerName": "j",
+      "CustomerAmount": 0,
+      "id": 8
+    },
+    {
+      "CustomerCode": "4569",
+      "CustomerName": "jhklh",
+      "CustomerAmount": 0,
+      "id": 9
+    },
+    {
+      "CustomerCode": "4569",
+      "CustomerName": "cvxb",
+      "CustomerAmount": 0,
+      "id": 10
+    },
+    {
+      "CustomerCode": "5825",
+      "CustomerName": "cfgj",
+      "CustomerAmount": 0,
+      "id": 11
+    },
+    {
+      "CustomerCode": "6789",
+      "CustomerName": "vcx",
+      "CustomerAmount": 0,
+      "id": 12
+    },
+    {
+      "CustomerCode": "5852",
+      "CustomerName": "jhgk",
+      "CustomerAmount": 0,
+      "id": 13
+    },
+    {
+      "CustomerCode": "2585",
+      "CustomerName": "bnvmk",
+      "CustomerAmount": 0,
+      "id": 14
+    },
+    {
+      "CustomerCode": "52584",
+      "CustomerName": "vbn",
+      "CustomerAmount": 0,
+      "id": 15
+    },
+    {
+      "CustomerCode": "6789",
+      "CustomerName": "fdhgh",
+      "CustomerAmount": "100",
+      "id": 16
+    },
+    {
+      "CustomerCode": "4562",
+      "CustomerName": "vb",
+      "CustomerAmount": 0,
+      "id": 17
+    },
+    {
+      "CustomerCode": "2586",
+      "CustomerName": "bnnv",
+      "CustomerAmount": 0,
+      "id": 18
+    },
+    {
+      "CustomerCode": "2586",
+      "CustomerName": "ghjmgh",
+      "CustomerAmount": 0,
+      "id": 19
+    }
+  ]
+}

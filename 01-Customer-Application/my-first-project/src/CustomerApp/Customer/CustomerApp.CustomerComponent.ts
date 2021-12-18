@@ -1,6 +1,6 @@
 import { Component, Injector } from '@angular/core';
 import { CustomerModel } from '../CustomerApp.model';
-import { Http } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   templateUrl: './CustomerApp.CustomerView.html',
@@ -10,7 +10,7 @@ export class CustomerComponent {
   title = 'Customer Application';
   CustomerModel: CustomerModel = new CustomerModel();
   CustomerModels: Array<CustomerModel> = new Array<CustomerModel>();
-  constructor(_injector: Injector, public http: Http) {
+  constructor(_injector: Injector, public http: HttpClient) {
     const injectorObject = _injector.get('1');
     injectorObject.Log();
   }
@@ -23,11 +23,11 @@ export class CustomerComponent {
   }
 
   Error(res: any) {
-    console.debug(res.json());
+    console.debug(res);
   }
 
   SuccessGet(res: any) {
-    this.CustomerModels = res.json();
+    this.CustomerModels = res;
   }
 
   GetFromServer(r: any) {

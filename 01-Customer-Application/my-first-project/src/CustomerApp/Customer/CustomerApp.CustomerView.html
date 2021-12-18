@@ -1,6 +1,9 @@
 <div>{{ title }} app is running!</div>
 <br />
-<form [formGroup]="CustomerModel.formCustomerGroup">
+<form
+  [formGroup]="CustomerModel.formCustomerGroup"
+  *ngIf="CustomerModel.formCustomerGroup"
+>
   Customer Code :
   <input
     formControlName="CustomerCodeControl"
@@ -35,24 +38,9 @@
 </form>
 <br />
 ========================================
-<div
-  *ngIf="CustomerModel.formCustomerGroup.dirty"
-  [hidden]="!(CustomerModel.formCustomerGroup.controls['CustomerCodeControl'].hasError('pattern'))"
->
-  Customer Code Is Not Proper
-</div>
-<div
-  *ngIf="CustomerModel.formCustomerGroup.dirty"
-  [hidden]="!(CustomerModel.formCustomerGroup.controls['CustomerCodeControl'].hasError('required'))"
->
-  Customer Code Is Required
-</div>
-<div
-  *ngIf="CustomerModel.formCustomerGroup.dirty"
-  [hidden]="!(CustomerModel.formCustomerGroup.controls['CustomerNameControl'].hasError('required'))"
->
-  Customer Name is Required
-</div>
+<div>Customer Code Is Not Proper</div>
+<div>Customer Code Is Required</div>
+<div>Customer Name is Required</div>
 <br />
 ========================================
 <br />
