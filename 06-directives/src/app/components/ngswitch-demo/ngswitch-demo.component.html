@@ -1,0 +1,18 @@
+<hr />
+<hr />
+<hr />
+<h1>ngswitch-demo</h1>
+<hr />
+<button class="btn btn-link" (click)="setChoice(1)">Button 1</button>
+<button class="btn btn-link" (click)="setChoice(2)">Button 2</button>
+<button class="btn btn-link" (click)="setChoice(3)">Button 3</button>
+<button class="btn btn-link" (click)="setChoice(4)">Button 4</button>
+<button class="btn btn-link" (click)="setChoice(5)">Button 5</button>
+
+<div [ngSwitch]="choice">
+  <div *ngSwitchCase="1"><h1>his is div 1</h1></div>
+  <div *ngSwitchCase="2"><h1>his is div 2</h1></div>
+  <div *ngSwitchCase="3"><h1>his is div 3</h1></div>
+  <div *ngSwitchCase="4"><h1>his is div 4</h1></div>
+  <div *ngSwitchDefault>No Contect</div>
+</div>
