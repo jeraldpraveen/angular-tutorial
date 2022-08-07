@@ -8,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class NgforofDemoComponent implements OnInit {
   people: Array<any> = [];
 
+  imgStyles: any = {
+    height: '150px',
+    'border-radius': '20px',
+    'margin.px': 10,
+  };
+
   constructor() {}
 
   ngOnInit(): void {
