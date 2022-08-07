@@ -44,4 +44,12 @@ export class NgforofDemoComponent implements OnInit {
       },
     ];
   }
+
+  getClass(age: number) {
+    if (age < 18) {
+      return 'text-danger';
+    } else {
+      return 'text-success';
+    }
+  }
 }

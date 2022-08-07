@@ -2,8 +2,13 @@
 <hr />
 
 <ul>
-  <li *ngFor="let p of people">This is person Data</li>
-  <li *ngFor="let p of people">
+  <li
+    *ngFor="let p of people"
+    [ngClass]="{ 'text-success': p.age >= 18, 'text-danger': p.age <= 18 }"
+  >
+    This is person Data
+  </li>
+  <li *ngFor="let p of people" [ngClass]="getClass(p.age)">
     <img [src]="p.picture" [ngStyle]="imgStyles" />
     {{ p.name }} is from {{ p.city }}
   </li>
