@@ -52,4 +52,10 @@ export class NgforofDemoComponent implements OnInit {
       return 'text-success';
     }
   }
+
+  performDelete(name: string) {
+    this.people = this.people.filter((element) => {
+      return element.name !== name;
+    });
+  }
 }

@@ -11,5 +11,8 @@
   <li *ngFor="let p of people" [ngClass]="getClass(p.age)">
     <img [src]="p.picture" [ngStyle]="imgStyles" />
     {{ p.name }} is from {{ p.city }}
+    <button class="btn btn-warning" (click)="performDelete(p.name)">
+      DELETE
+    </button>
   </li>
 </ul>
