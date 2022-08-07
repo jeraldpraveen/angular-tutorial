@@ -1,6 +1,9 @@
 <h3>ngForOf Demo</h3>
 <hr />
 
+<h1 *ngIf="people.length > 0">There are {{ people.length }} contacts</h1>
+<h1 *ngIf="people.length === 0">There are no contacts in your address BOOK</h1>
+
 <ul>
   <li
     *ngFor="let p of people"
