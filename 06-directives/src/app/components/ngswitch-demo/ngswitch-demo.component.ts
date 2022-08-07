@@ -9,9 +9,16 @@ export class NgswitchDemoComponent implements OnInit {
   choice = 1;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (sessionStorage['userChoice']) {
+      this.choice = sessionStorage['userChoice'];
+    } else {
+      this.choice = 1;
+    }
+  }
 
-  setChoice(choise: number) {
-    this.choice = choise;
+  setChoice(choice: number) {
+    this.choice = choice;
+    sessionStorage['userChoice'] = choice;
   }
 }
